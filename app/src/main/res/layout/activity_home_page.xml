@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1A1A"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".Home_Page">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp">
+
+
+
+
+
+            <TextView
+                android:id="@+id/txt_hell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20sdp"
+                android:text="Hello"
+                android:textColor="#8F8585"
+                android:textSize="@dimen/_18sdp" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_43sdp"
+                android:text="Johan Smith"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/pro_img"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/_20sdp"
+                android:src="@drawable/profile_img" />
+
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="#121111"
+            app:cardCornerRadius="@dimen/_30sdp"
+            app:cardElevation="@dimen/_30sdp">
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:backgroundTint="@color/white"
+                        android:src="@drawable/home_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_45sdp"
+                        android:layout_marginTop="@dimen/_13sdp"
+                        android:text="Home"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/scedual_img"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_13sdp"
+                        android:backgroundTint="@color/white"
+                        android:src="@drawable/sceduel_img" />
+
+                    <ImageButton
+                        android:id="@+id/acc_img"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_13sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:backgroundTint="@color/white"
+                        android:src="@drawable/account_img" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20sdp"
+                android:text="Let’s continue your fitness challenge."
+                android:textColor="#8F8585"
+                android:textSize="@dimen/_15sdp" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_60sdp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/main_bc1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_25sdp"
+                    android:textColor="@color/white"
+                    android:text="Today’s workout"
+                    android:padding="@dimen/_10sdp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="#8F8585"
+                    android:text="12 Exerciese"
+                    android:layout_marginTop="@dimen/_28sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_180sdp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/main_bc2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_25sdp"
+                    android:textColor="@color/white"
+                    android:text="Quads &amp; Deltoids"
+                    android:padding="@dimen/_10sdp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="#8F8585"
+                    android:text="7 Exerciese completed"
+                    android:layout_marginTop="@dimen/_28sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardBackgroundColor="#322B2D"
+                android:layout_marginTop="@dimen/_300sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_25sdp"
+                    android:textColor="@color/white"
+                    android:text="Connect your device"
+                    android:padding="@dimen/_10sdp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="#8F8585"
+                    android:text="7 Exerciese completed"
+                    android:layout_marginTop="@dimen/_28sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/watch_img"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_gravity="end"/>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_420sdp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/main_bc2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_25sdp"
+                    android:textColor="@color/white"
+                    android:text="Quads &amp; Deltoids"
+                    android:padding="@dimen/_10sdp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="#8F8585"
+                    android:text="7 Exerciese completed"
+                    android:layout_marginTop="@dimen/_28sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:textStyle="bold"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
